@@ -12,7 +12,7 @@ function App() {
       </p> */}
 
       <CardBuilder/>
-      <Date/>
+      
     </div>
   );
 }

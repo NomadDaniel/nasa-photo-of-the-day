@@ -3,18 +3,23 @@ import React, {useState} from 'react';
 
 const Date = (props) => {
 
- const [date, setDate] = useState()
+ const [dateUrl, setDateUrl] = useState(props.dateUrl)
 
-  function handleDate (e) {
-    setDate(e.target.value)
+  function handleChange (e) {
     e.preventDefault()
-    console.log(date)
+    setDateUrl(e.target.value)
+    console.log(dateUrl)
   }
+
+  // const handleSubmit = e =>{
+  //   e.preventDefault();
+  //   props.date = date;
+  // }
 
     return (
         <div>
             <form>
-                <input onChange = {handleDate} type='text'  id='myData' placeholder='Date (YYYY/MM/DD)'/>
+                <input onChange = {handleChange} type='text'  id='myData' placeholder='Date (YYYY/MM/DD)'/>
                 <button >Submit</button>
 
            </form>
