@@ -1,19 +1,18 @@
-import React from 'react';
+import React from 'react'
 
 const Card = props => {
     return (
         <div>
-            <h1>{props.title}</h1>
+            <h1>{ props.title }</h1>
             <div>
-                <img src = {props.imgUrl} alt='Beautiful Nasa images'></img>
+                <img src = { props.imgUrl } alt = 'Beautiful Nasa images'></img>
             </div>
             <div>
-                <p>{props.explanation}</p>
+                <p>{ props.explanation }</p>
             </div>
-            <p>{props.date}</p>
-
+            <p>{ props.date }</p>
         </div>
-    );
-};
+    )
+}
 
-export default Card;
+export default Card
