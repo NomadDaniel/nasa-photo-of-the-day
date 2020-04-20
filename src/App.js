@@ -1,15 +1,16 @@
-import React from "react";
-import "./App.css";
+import React from "react"
+// import styled from 'styled-components'
+// import "./App.css"
+import CardBuilder from './Components/CardBuilder'
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+    
+      <CardBuilder/>
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
